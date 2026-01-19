@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+
+    <script>
+(function () {
+  const theme = localStorage.getItem('theme');
+  if (theme === 'light') {
+    document.documentElement.classList.add('light-theme');
+  }
+})();
+</script>
+
+
+   <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    
+
+    <!--custom css file link -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body class="page-contact">
+
+    <div class="theme-toggle" id="themeToggle">
+  <span class="icon sun">☀</span>
+  <span class="icon moon">🌙</span>
+   <span class="sun-rays"></span>
+    </div>
+    
+    <!--navbar section starts -->
+    <nav class="navbar">
+        <a href="index.html" title="Home"> <i class="fas fa-home"></i><span>home</span></a>
+        <a href="about.html" title="About"> <i class="fas fa-user"></i><span>about</span></a>
+        <a href="portfolio.html" title="Portfolio"> <i class="fas fa-briefcase"></i><span>portfolio</span></a>
+        <a href="blogs.html" title="Blogs"> <i class="fas fa-blog"></i><span>blogs</span></a>
+        <a href="contact.html" title="Contact"> <i class="fas fa-address-book"></i><span>contact</span></a>
+    </nav>
+
+    <!--navbar section starts -->
+    <!--contact section starts-->
+
+<section class="contact">
+
+    <h1 class="heading"> contact <span> me </span></h1>
+
+    <div class="row">
+
+        <div class="info-container">
+
+            <h1>get in touch </h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni, facere.</p>
+
+            <div class="box-container">
+
+                <div class="box">
+                    <i class="fas fa-map"></i>
+                    <div class="info">
+                        <h3>address :</h3>
+                        <p>sanaa, yemen - 400104 </p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <i class="fas fa-envelope"></i>
+                    <div class="info">
+                        <h3>email :</h3>
+                        <p>salahalotobi@gmail.com </p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <i class="fas fa-phone"></i>
+                    <div class="info">
+                        <h3>number :</h3>
+                        <p>+967 711 068 047 </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="share">
+                <a href="https://www.facebook.com/sdo752" class="fab fa-facebook-f"></a>
+                <a href="https://x.com/sdo_75?t=EbGzZvm6AbCcN7O7YQzbqQ&s=08" class="fab fa-twitter"></a>
+                <a href="https://www.instagram.com/sdo_752?igsh=eHNoa2hwdWx5bzBt" class="fab fa-instagram"></a>
+                <a href="https://www.linkedin.com/in/%D8%B5%D9%84%D8%A7%D8%AD-%D8%A7%D9%84%D8%B9%D8%AA%D8%A8%D9%8A-undefined-4771a92a9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="fab fa-linkedin"></a>
+            </div>
+
+        </div>
+
+        <form action="">
+
+            <div class="inputBox">
+                <input type="text" placeholder="your name">
+                <input type="number" placeholder="your number">
+            </div>
+
+            <div class="inputBox">
+                <input type="email" placeholder="your email">
+                <input type="text" placeholder="your subject">
+            </div>
+            <textarea name="" placeholder="your message" id="" cols="30" rows="10"></textarea>
+
+            <input type="submit" value="send message" class="btn">
+
+        </form>
+
+    </div>
+
+</section>
+
+    <!--contact section ends-->
+
+
+
+    <script>
+const toggle = document.getElementById('themeToggle');
+const html = document.documentElement;
+
+toggle.addEventListener('click', () => {
+  if (html.classList.contains('light-theme')) {
+    html.classList.remove('light-theme');
+    localStorage.setItem('theme', 'dark'); // 🔥 هذا السطر هو الحل
+  } else {
+    html.classList.add('light-theme');
+    localStorage.setItem('theme', 'light');
+  }
+});
+</script>
+
+
+
+
+</body>
+</html>

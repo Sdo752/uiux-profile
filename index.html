@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <script>
+(function () {
+  const theme = localStorage.getItem('theme');
+  if (theme === 'light') {
+    document.documentElement.classList.add('light-theme');
+  }
+})();
+</script>
+
+
+
+   <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    
+
+    <!--custom css file link -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    
+ 
+    
+</head>
+<body class="page-home">
+
+    <div class="theme-toggle" id="themeToggle">
+  <span class="icon sun">☀</span>
+  <span class="icon moon">🌙</span>
+   <span class="sun-rays"></span>
+    </div>
+
+    
+    <!--navbar section starts -->
+    <nav class="navbar">
+        <a href="index.html" title="Home" > <i class="fas fa-home"></i><span>home</span></a>
+        <a href="about.html" title="About"> <i class="fas fa-user"></i><span>about</span></a>
+        <a href="portfolio.html" title="Portfolio"> <i class="fas fa-briefcase"></i><span>portfolio</span></a>
+        <a href="blogs.html" title="Blogs"> <i class="fas fa-blog"></i><span>blogs</span></a>
+        <a href="contact.html" title="Contact"> <i class="fas fa-address-book"></i><span>contact</span></a>
+
+    </nav>
+
+
+    
+    
+    <!--navbar section ends -->
+    <!--navbar section starts -->
+    <section class="home">
+        <div class="image">
+            <img src="images/salah_psd2.png" alt="">
+            
+        </div>
+        <div class="content">
+            <h3>hi, i am salah alotobi</h3>
+            <span>front-end developer </span>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique dolorum eius omnis 
+            earum exercitationem ex quidem? Consequatur nam mollitia officia!</p>
+            <a href="#" class="btn"> about me <i class="fas fa-user"></i></a>
+
+        </div>
+
+
+    </section>
+
+    <!--home section ends-->
+
+
+    <script>
+const toggle = document.getElementById('themeToggle');
+const html = document.documentElement;
+
+toggle.addEventListener('click', () => {
+  if (html.classList.contains('light-theme')) {
+    html.classList.remove('light-theme');
+    localStorage.setItem('theme', 'dark');
+  } else {
+    html.classList.add('light-theme');
+    localStorage.setItem('theme', 'light');
+  }
+});
+</script>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+
+    <script>
+(function () {
+  const theme = localStorage.getItem('theme');
+  if (theme === 'light') {
+    document.documentElement.classList.add('light-theme');
+  }
+})();
+</script>
+
+
+   <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    
+
+    <!--custom css file link -->
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body class="page-portfolio">
+    <div class="theme-toggle" id="themeToggle">
+  <span class="icon sun">☀</span>
+  <span class="icon moon">🌙</span>
+   <span class="sun-rays"></span>
+    </div>
+    
+    <!--navbar section starts -->
+    <nav class="navbar">
+        <a href="index.html" title="Home"> <i class="fas fa-home"></i><span>home</span></a>
+        <a href="about.html" title="About"> <i class="fas fa-user"></i><span>about</span></a>
+        <a href="portfolio.html" title="Portfolio"> <i class="fas fa-briefcase"></i><span>portfolio</span></a>
+        <a href="blogs.html" title="Blogs"> <i class="fas fa-blog"></i><span>blogs</span></a>
+        <a href="contact.html" title="Contact"> <i class="fas fa-address-book"></i><span>contact</span></a>
+    </nav>
+
+<!--navbar section starts -->
+<!--portfolio section starts -->
+<section class="portfolio">
+
+    <h1 class="heading"><span>my</span> work </h1>
+
+    <div class="box-container">
+       
+        <div class="box">
+            <img src="images/haddahh.jpg" alt="">
+            <div class="content">
+                <h3>project 01</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eos.</p>
+                <a href="#">read more </a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/Honey.jpg" alt="">
+            <div class="content">
+                <h3>project 02</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eos.</p>
+                <a href="#">read more </a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/زبيب اسود حاتمي2.jpg" alt="">
+            <div class="content">
+                <h3>project 03</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eos.</p>
+                <a href="#">read more </a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/3مكسرات وعسل.jpg" alt="">
+            <div class="content">
+                <h3>project 04</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eos.</p>
+                <a href="#">read more </a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/SDO_salah5.jpg" alt="">
+            <div class="content">
+                <h3>project 05</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eos.</p>
+                <a href="#">read more </a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/haddah_51_yemen.jpg" alt="">
+            <div class="content">
+                <h3>project 06</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eos.</p>
+                <a href="#">read more </a>
+            </div>
+        </div>
+
+    </div>
+
+    <a href="#" class="btn">load more <i class="fas fa-redo"></i></a>
+
+</section>
+
+
+
+
+
+<!--portfolio section ends   -->
+    
+    
+    <script>
+const toggle = document.getElementById('themeToggle');
+const html = document.documentElement;
+
+toggle.addEventListener('click', () => {
+  if (html.classList.contains('light-theme')) {
+    html.classList.remove('light-theme');
+    localStorage.setItem('theme', 'dark'); // 🔥 هذا السطر هو الحل
+  } else {
+    html.classList.add('light-theme');
+    localStorage.setItem('theme', 'light');
+  }
+});
+</script>
+
+
+
+
+
+
+</body>
+</html>
