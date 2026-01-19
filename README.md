@@ -17,3 +17,18 @@ A modern and professional **UI/UX personal portfolio website** designed to showc
 - Responsive Design Principles
 
 ## 📂 Project Structure
+
+
+## 🚀 Live Demo
+🔗 **Live Website:**  
+https://sdo752.github.io/uiux-profile/
+
+## 👤 About Me
+UI/UX Designer passionate about creating clean, user-friendly, and visually appealing interfaces that focus on user experience and accessibility.
+
+## 📬 Contact
+Feel free to reach out for collaboration or freelance opportunities.
+
+git add README.md
+git commit -m "Add professional README"
+git push
